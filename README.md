@@ -1,5 +1,7 @@
 # fabiang/doctrine-switch-connection
 
+[![Build Status](https://travis-ci.com/fabiang/doctrine-switch-connection.svg?branch=master)](https://travis-ci.com/fabiang/doctrine-switch-connection)
+
 This Laminas and Zend Framework 3 module helps you to switch your Doctrine connection depending on some others object value.
 
 ```bash
