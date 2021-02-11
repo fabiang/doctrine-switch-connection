@@ -37,7 +37,7 @@ return [
     'doctrine' => [
         // configure your database connections
         'connection' => [
-            // you then use orm_default and
+            // use orm_default in your app and that factory will then return one of these
             'orm_conn1' => [
                 'driverClass' => MySQLDriver::class,
                 'params'      => [
