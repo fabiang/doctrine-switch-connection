@@ -13,7 +13,7 @@ class ConnectionFactory extends DBALConnectionFactory
      */
     public function __construct()
     {
-        parent::__construct(null);
+        parent::__construct('');
     }
 
     /**

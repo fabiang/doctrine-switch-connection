@@ -38,19 +38,22 @@ final class ConnectionFactoryTest extends TestCase
      */
     public function test_Invoke()
     {
-        $this->assertNull($this->object->getName());
+        $this->assertSame('', $this->object->getName());
 
         $container = $this->prophesize(ContainerInterface::class);
 
-        $container->get('Configuration')->willReturn([
+        $testConfig = [
             'doctrine' => [
                 'connection' => [
                     'orm_test' => [
                         'driverClass' => Driver::class,
-                    ]
-                ]
-            ]
-        ]);
+                    ],
+                ],
+            ],
+        ];
+
+        $container->get('Configuration')->willReturn($testConfig);
+        $container->get('config')->willReturn($testConfig);
 
         $container->get('doctrine.configuration.orm_default')->willReturn(null);
         $container->get('doctrine.eventmanager.orm_default')->willReturn(null);
