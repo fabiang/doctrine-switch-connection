@@ -39,22 +39,22 @@ return [
             'orm_conn1' => [
                 'driverClass' => MySQLDriver::class,
                 'params'      => [
-                    'host'     => getenv('DB_SIFO_HOST'),
-                    'port'     => getenv('DB_SIFO_PORT'),
-                    'user'     => getenv('DB_SIFO_USER'),
-                    'password' => getenv('DB_SIFO_PASSWORD'),
-                    'dbname'   => getenv('DB_SIFO_DBNAME'),
+                    'host'     => getenv('DB_CONN1_HOST'),
+                    'port'     => getenv('DB_CONN1_PORT'),
+                    'user'     => getenv('DB_CONN1_USER'),
+                    'password' => getenv('DB_CONN1_PASSWORD'),
+                    'dbname'   => getenv('DB_CONN1_DBNAME'),
                     'charset'  => 'utf8mb4',
                 ]
             ],
             'orm_conn2' => [
                 'driverClass' => MySQLDriver::class,
                 'params'      => [
-                    'host'     => getenv('DB_INVITEL_HOST'),
-                    'port'     => getenv('DB_INVITEL_PORT'),
-                    'user'     => getenv('DB_INVITEL_USER'),
-                    'password' => getenv('DB_INVITEL_PASSWORD'),
-                    'dbname'   => getenv('DB_INVITEL_DBNAME'),
+                    'host'     => getenv('DB_CONN2_HOST'),
+                    'port'     => getenv('DB_CONN2_PORT'),
+                    'user'     => getenv('DB_CONN2_USER'),
+                    'password' => getenv('DB_CONN2_PASSWORD'),
+                    'dbname'   => getenv('DB_CONN2_DBNAME'),
                     'charset'  => 'utf8mb4',
                 ]
             ],
