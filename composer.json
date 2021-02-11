@@ -1,0 +1,34 @@
+{
+    "name": "fabiang/doctrine-switch-connection",
+    "description": "Switch your Doctrine connection depending on some others object value",
+    "type": "library",
+    "license": "BSD-2-Clause",
+    "keywords": [
+        "Doctrine",
+        "Zend Framework",
+        "Laminas"
+    ],
+    "authors": [
+        {
+            "name": "Fabian Grutschus",
+            "email": "f.grutschus@lubyte.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1",
+        "doctrine/doctrine-orm-module": "^1.1",
+        "zendframework/zend-modulemanager": "^2.7",
+        "zendframework/zend-servicemanager": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fabiang\\Common\\SwitchDatabase\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.5"
+    }
+}

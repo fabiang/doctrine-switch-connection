@@ -1,0 +1,9 @@
+.DS_Store
+configs/.DS_Store
+!.gitignore
+vendor/
+.idea
+.vagrant
+phpunit.xml
+.phpunit.result.cache
+tests/log/
